@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="Zurück-Button.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <button id="zurueck-button" class="back-button">Zurück</button>
+        <h1>Login</h1>
+        <div id="login-form">
+            <form method="post" onsubmit="checkSecretCode(event)">
+               
+                <div class="form-group">
+                    <label for="secret-code">Secret Code:</label>
+                    <input type="password" id="secret-code" name="secret-code" required>
+                </div>
+                <button class="button" type="submit">Anmelden</button>
+            </form>
+            <p id="error-message" style="color: red;"></p>
+        </div>
+    </div>
+
+    <script>
+        function checkSecretCode(event) {
+            event.preventDefault(); // Prevent the form from submitting
+
+            const secretCode = document.getElementById('secret-code').value;
+
+            if (secretCode === "StefanGoat1954") {
+                // Redirect to a different page if the secret code is correct
+                window.location.href = "SetPlays.html";
+            } else {
+                // Display an error message if the secret code is incorrect
+                document.getElementById('error-message').textContent = "Incorrect secret code.";
+            }
+        }
+
+        // JavaScript function to go back to the previous page
+        document.getElementById('zurueck-button').addEventListener('click', function () {
+            window.history.back();
+        });
+    </script>
+</body>
+
+</html>

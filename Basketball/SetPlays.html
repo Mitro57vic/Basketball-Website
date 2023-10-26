@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SetPlays.css">
+    <link rel="stylesheet" href="Zurück-Button.css">
+    <title>Your Website</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Baden HU18A Set plays</h1>
+        <div class="button-container">
+     
+                <button id="zurueck-button" class="back-button">Zurück</button>
+            <a href="shirt.html" class="button">Shirt</a>
+            <a href="head.html" class="button">Head</a>
+            <a href="xplay.html" class="button">X Play</a>
+            <a href="outdiamond.html" class="button">Out Diamond</a>
+            <a href="outbox.html" class="button">Out Box</a>
+        </div>
+    </div>
+    <script>
+ // JavaScript function to go back to the previous page
+ document.getElementById('zurueck-button').addEventListener('click', function () {
+            window.history.back();
+        });
+
+    </script>
+</body>
+</html>

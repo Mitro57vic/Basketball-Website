@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 24px;
+}
+
+#image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#shirt-image {
+    max-width: 100%;
+}
+
+
+#head-image {
+    max-width: 100%; /* Das Bild wird auf die Breite des Containers angepasst */
+    height: auto; /* Das Seitenverhältnis bleibt erhalten */
+}
+#xplay-image {
+    max-width: 100%;
+}
+#outdiamond-image {
+    max-width: 100%;
+}
+#outbox-image{
+    max-width: 100%;
+}
+
+
+#next-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #0a4483;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+#next-button:hover {
+    background-color: #0056b3;
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    #image-container {
+        margin: 10px 0;
+    }
+
+    #shirt-image, #xplay-image  {
+        max-width: 80%;
+    }
+
+    #next-button {
+        font-size: 16px;
+    }
+
+    #next-button:hover {
+        background-color: #0056b3;
+    }
+
+    .register-link {
+        margin-top: 5px;
+    }
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    #next-button {
+        font-size: 16px;
+    }
+}
+
+/* Media Query für sehr kleine Bildschirme (max. Breite 400px) */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    #next-button {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Plays.css"> <!-- Verwenden Sie Ihre eigenen CSS-Dateien -->
+    <link rel="stylesheet" href="Zurück-Button.css">
+    <title>Out Diamond</title> <!-- Ändern Sie den Titel nach Bedarf -->
+</head>
+
+<body>
+    <div class="container">
+        <button id="zurueck-button" class="back-button">Zurück</button>
+        <h1>Out Diamond(Inbound)</h1> <!-- Titel anpassen -->
+        <div id="image-container">
+            <img id="outdiamond-image" src="outdiamond1.jpg" alt="Out Diamond Image">
+        </div>
+        <button id="next-button" onclick="nextImage()">Next Step</button>
+    </div>
+
+    <script>
+        const images = ['outdiamond1.jpg', 'outdiamond2.jpg', 'outdiamond3.jpg']; // Bildpfade anpassen
+        let currentIndex = 0;
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            const outdiamondImage = document.getElementById('outdiamond-image');
+            outdiamondImage.src = images[currentIndex];
+        }
+        document.getElementById('zurueck-button').addEventListener('click', function () {
+            window.history.back();
+        });
+    </script>
+</body>
+
+</html>
