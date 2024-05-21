@@ -29,8 +29,8 @@ h1 {
 
 
 #head-image {
-    max-width: 100%; /* Das Bild wird auf die Breite des Containers angepasst */
-    height: auto; /* Das Seitenverhältnis bleibt erhalten */
+    max-width: 100%; 
+    height: auto; 
 }
 #xplay-image {
     max-width: 100%;
@@ -98,7 +98,7 @@ h1 {
     }
 }
 
-/* Media Query für sehr kleine Bildschirme (max. Breite 400px) */
+
 @media (max-width: 400px) {
     h1 {
         font-size: 18px;
