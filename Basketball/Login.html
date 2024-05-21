@@ -28,20 +28,20 @@
 
     <script>
         function checkSecretCode(event) {
-            event.preventDefault(); // Prevent the form from submitting
+            event.preventDefault(); 
 
             const secretCode = document.getElementById('secret-code').value;
 
             if (secretCode === "StefanGoat1954") {
-                // Redirect to a different page if the secret code is correct
+               
                 window.location.href = "SetPlays.html";
             } else {
-                // Display an error message if the secret code is incorrect
+               
                 document.getElementById('error-message').textContent = "Incorrect secret code.";
             }
         }
 
-        // JavaScript function to go back to the previous page
+       
         document.getElementById('zurueck-button').addEventListener('click', function () {
             window.history.back();
         });
