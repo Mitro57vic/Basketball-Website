@@ -1,5 +1,5 @@
 body {
-    background-image: url('basketball.jpg'); /* Hintergrundbild */
+    background-image: url('basketball.jpg'); 
     background-size: cover;
     font-family: Arial, sans-serif;
     text-align: center;
@@ -10,7 +10,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.7); /* Hintergrundcontainer mit Transparenz */
+    background-color: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
 }
 
@@ -45,18 +45,18 @@ h1 {
     background-color: #555;
 }
 
-/* Hinzufügen von Unschärfe zum Hintergrundbild */
+
 body::before {
     content: "";
     background: inherit;
-    filter: blur(5px); /* Unschärfe hinzufügen */
+    filter: blur(5px); 
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-size: 50%; /* Hintergrundbild kleiner machen */
+    background-size: 50%;
 }
 @media (max-width: 600px) {
     .container {
